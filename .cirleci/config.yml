@@ -1,9 +1,9 @@
 version: 2.1
 jobs:
   build-and-test:
-    machine: 
+    machine:
       image: ubuntu-2004:202104-01
-steps:
+    steps:
       - checkout
       - run: make deps
       - run: make test
